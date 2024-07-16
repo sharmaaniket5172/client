@@ -25,7 +25,7 @@ function App() {
 
         try {
             const newUser = { username, email, referralCode };
-            const response = await axios.post('http://localhost:3000/users', newUser); // Replace with your backend URL
+            const response = await axios.post('https://server-dkjk.onrender.com/users', newUser); // Replace with your backend URL
             console.log('User created:', response.data);
             // Optionally, you can reset the form fields here
             setUsername('');
